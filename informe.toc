@@ -5,4 +5,10 @@
 \contentsline {subsection}{\numberline {2.1}La estadística descriptiva}{4}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}La IA en la educación}{4}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Los modelos NPL de Inteligencia Artificial}{4}{subsection.2.3}%
-\contentsline {section}{Referencias}{5}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Planteamiento de Hipotesis}{5}{section.3}%
+\contentsline {section}{\numberline {4}Metodología}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Tipo de muestreo}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Técnicas de análisis}{6}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Consideraciones éticas}{6}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Limitaciones del estudio}{6}{subsection.4.4}%
+\contentsline {section}{Referencias}{7}{subsection.4.4}%
