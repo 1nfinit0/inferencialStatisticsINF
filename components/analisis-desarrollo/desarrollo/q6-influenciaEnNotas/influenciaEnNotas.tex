@@ -1,0 +1,51 @@
+\subsection{Impacto Percibido del Uso de I.A. en el rendimiento académico}
+En este análisis se buscará como objetivo explorar cómo las respuestas de los estudiantes sobre la influencia de la IA en sus notas pueden ser modeladas utilizando la distribución binomial. La distribución binomial es adecuada para este caso porque estamos observando un número fijo de estudiantes (77), y queremos calcular la probabilidad de que un número específico de estudiantes elija una respuesta específica sobre el impacto de la IA en sus notas.
+
+\textbf{Tabla de frecuencias:}Para el cálculo de la distribución binomial, se usará como probabilidad de éxito la respuesta "Influye mucho", debido a que es la respuesta más representativa y frecuente.
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{l c c}
+		\hline
+		{Respuesta} & {\(f_i\)} & \textit{Fi}\\
+		\hline
+		Influye mucho          & 38 & 38\\
+		Influye moderadamente  & 26 & 64\\
+		Influye ligeramente    & 9  & 73\\
+		No influye             & 3  & 76\\
+		No estoy seguro        & 1  & 77\\
+		\hline
+		Total                  & 77 & \\
+		\hline
+	\end{tabular}
+	\caption{Distribución de respuestas sobre el nivel de influencia percibida}
+	\label{tabla:influencia}
+\end{table}
+
+\textbf{Parámetros de la distribución binomial:}
+\begin{itemize}
+	\item Número de encuestados(n) = 77
+	\item Probabilidad de éxito (p) = Probabilidad que se elija la categoría específica, por ejemplo “influir mucho”
+	\item Número de éxitos deseados (k) = número de estudiantes que eligen una categoría específica.
+\end{itemize}
+
+\textbf{Probabilidad de éxito p:}
+La probabilidad de que un estudiante elija "influye mucho" seria simplemente la frecuencia relativa de esa respuesta:
+\begin{equation*}
+	p(influir mucho) = \dfrac{38}{77} \approx 0.49
+\end{equation*}
+
+\textbf{Cálculo de la probabilidad binomial:}Al reemplazar los datos de la fórmula para que 38 de los 77 estudiantes elijan “influye mucho”:
+\begin{equation*}
+	P(x = 38) = \binom{77}{38} . 0.49^{38}(1-0.49)^{77-38}
+\end{equation*}
+Después de calcular el coeficiente binomial $\binom{77}{38}$, $p^{38}$ y $(1-p)^39$ se obtendría el siguiente resultado:
+\begin{equation*}
+	P(x = 38) = (3.57 . 10^{21}) . (1.84 . 10^{-6}) . (2.50 . 10^{-6}) = 1.64 . 10^{10} \approx 0.16\%
+\end{equation*}
+Esto significa que hay aproximadamente un 0.16\% de probabilidad de que exactamente 38 estudiantes seleccionen "Influye mucho" en la encuesta.
+
+\textbf{Interpretación de los Datos:}
+Dado que 38 estudiantes seleccionaron "Influye mucho", y esta respuesta tiene una probabilidad de 49.35\% de ser seleccionada por cada estudiante, la probabilidad de que ese número exacto de estudiantes elija esa opción es relativamente baja. Esto indica que, aunque "Influye mucho" es la respuesta más popular, la probabilidad de que 38 estudiantes la elijan en particular, en una muestra más grande, es pequeña en términos de variación aleatoria.
+
+

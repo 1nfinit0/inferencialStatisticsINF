@@ -1,0 +1,52 @@
+\subsection{Consideraciones sobre la regulacion de la IA en el ámbito académico.}
+
+Con respecto a la regulación de la inteligencia artificial en el ámbito académico, la mayoría de los encuestados considera que es necesario regular el uso de la inteligencia artificial en el ámbito académico. La cantidad de respuestas son las siguientes:
+
+\begin{table}[H]
+  \centering
+  \renewcommand{\arraystretch}{1.5}
+  \begin{tabular}{l c c }
+    \hline
+    Respuestas & \(f_i\) & \(h_i\) \\
+    \hline
+    Si, es necesario & 35 & \(45.5\%\) \\
+    No, está bien como está & 28 & \(36.4\%\) \\
+    No opina & 14 & \(18.2\%\) \\
+    \hline
+    Total & 77 & \(100\%\) \\
+  \end{tabular}
+  \caption{Opinión sobre la regulación de la IA en el ámbito académico}
+  \label{tabla:regulacionIA}
+\end{table}
+
+\textbf{Distribución binomial:} Podemos modelar la distribución de las respuestas como una distribución binomial, donde la probabilidad de éxito para cada una de las respuestas es: 
+
+\begin{itemize}
+  \item \(p(\text{Si, es necesario}) = 0.455\)
+  \item \(p(\text{No, está bien como está}) = 0.364\)
+  \item \(p(\text{No opina}) = 0.182\)
+  \item \(Total = 1\)
+\end{itemize}
+
+De acuerdo a ello podemos calcular la probabilidad de que al escoger 5 respuestas al azar de la muestra, 3 de ellas consideren que no es necesaria la regulación de la IA en el ámbito académico. Para ello, utilizamos la fórmula de la distribución binomial.
+
+Para ello necesitamos:
+
+\textbf{Fórmula de la distribución binomial:}
+\begin{equation*}
+  P(X = k) = \binom{n}{k} \cdot p^k \cdot (1 - p)^{n - k}
+\end{equation*}
+Donde: 
+\begin{itemize}
+  \item \(n = \text{Número de ensayos} = 5\)
+  \item \(k = \text{Número de éxitos} = 3\)
+  \item \(p = \text{probabilidad de éxitos} = 0.364\)
+\end{itemize}
+
+\textbf{Cálculo de la probabilidad:}
+
+\begin{equation*}
+  P(X = 3) = \binom{5}{3} \cdot 0.364^3 \cdot (1 - 0.364)^{5 - 3} = 10 \cdot 0.364^3 \cdot 0.636^2 \approx 0.308
+\end{equation*}
+
+Por lo tanto, la probabilidad de que al escoger 5 respuestas al azar de la muestra, 3 de ellas consideren que no es necesaria la regulación de la IA en el ámbito académico es de aproximadamente 0.308 o 30.8\%.

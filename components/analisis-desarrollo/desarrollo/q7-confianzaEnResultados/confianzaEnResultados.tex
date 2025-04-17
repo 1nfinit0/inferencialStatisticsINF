@@ -1,0 +1,59 @@
+\subsection{Confianza en los Resultados de la IA según Género de los estudiantes}
+Este análisis tiene como objetivo explorar cómo el género de los estudiantes influye en su nivel de confianza en los resultados proporcionados por herramientas de IA. Utilizaremos el Teorema de Bayes para calcular las probabilidades condicionadas y entender si el género impacta la confianza de los estudiantes en los resultados de la IA.
+
+\textbf{Tabla de frecuencias:}
+Solo se utilizarán los datos correspondientes al nivel de confianza moderada para realizar el análisis con el Teorema de Bayes al ser la categoría más significativa y confiable.
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{l c c}
+		\hline
+		{Respuesta} & {\(f_i\)} & \textit{hi}(\%)\\
+		\hline
+		Muy alto    & 5  & 6.49\%\\
+		Alto        & 14 & 18.18\%\\
+		Moderado    & 46 & 59.74\%\\
+		Bajo        & 12 & 15.58\%\\
+		Muy bajo    & 0  & 0\%\\
+		\hline
+		Total       & 77 & 100\%\\
+		\hline
+	\end{tabular}
+	\caption{Distribución de las respuestas}
+	\label{tabla:confianzaEnResultados}
+\end{table}
+
+\textbf{Probabilidades a Priori:}La probabilidad de que un estudiante tenga confianza moderada en los resultados de la IA es igual a la proporción de estudiantes que seleccionaron esta respuesta.
+\begin{equation*}
+	P(\textit{Confianza moderada}) = \dfrac{\textit{Frecuencia de confianza moderada}}{\textit{Total de estudiantes}} = \dfrac{46}{77} \approx 0.60
+\end{equation*}
+Ahora la probabilidad de que un estudiante sea masculino o femenino basado en las respuestas de:
+\begin{multicols}{2}
+	\begin{equation*}
+		P(\textit{Masculino}) = \dfrac{51}{77} \approx 0.66
+	\end{equation*}
+	\begin{equation*}
+		P(\textit{Femenino}) = \dfrac{26}{77} \approx 0.34
+	\end{equation*}
+\end{multicols}
+\vspace{-0.5cm}
+
+\textbf{Probabilidades condicionales:}La probabilidad de que un estudiante masculino y uno femenino tenga confianza moderada en los resultados de la IA es respectivamente:
+\begin{equation*}
+	P(\textit{Confianza moderada|Masculino}) = \dfrac{\textit{Frec. de Confianza en Masculinos}}{\textit{Total de masculinos}} = \dfrac{28}{51} \approx 0.55
+\end{equation*}
+\begin{equation*}
+	P(\textit{Confianza moderada|Femenino}) = \dfrac{\textit{Frec. de Confianza en Femeninos}}{\textit{Total de femeninos}} = \dfrac{18}{26} \approx 0.69
+\end{equation*}
+
+\textbf{Aplicación del Teorema de Bayes:} Aplicamos el Teorema de Bayes para calcular la probabilidad de que un estudiante sea masculino, dado que tiene confianza moderada en los resultados de la IA:
+\begin{equation*}
+	P(\textit{Masculino|Confianza Moderada}) = \dfrac{0.55 . 0.66}{0.60} \approx 0.61
+\end{equation*}
+\begin{equation*}
+	P(\textit{Femenino|Confianza Moderada}) = \dfrac{0.69 . 0.34}{0.60} \approx 0.39
+\end{equation*}
+La probabilidad de que un estudiante con confianza moderada en los resultados de la IA sea masculino es 61\%, mientras que la probabilidad de que sea femenino es 39\%.
+
+\textbf{Interpretación de los datos:}\\
+Los resultados indican que los estudiantes masculinos tienen una mayor probabilidad de confiar moderadamente en los resultados de la IA en comparación con las estudiantes femeninas. Este hallazgo sugiere que el género podría influir en la percepción de los resultados de la IA, con los estudiantes masculinos mostrando una tendencia más fuerte a confiar en los resultados proporcionados por estas herramientas.

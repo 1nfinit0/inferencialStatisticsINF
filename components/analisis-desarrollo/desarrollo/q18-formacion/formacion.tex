@@ -1,0 +1,48 @@
+\subsection{Sobre la capacitación o formación en el uso de inteligencia artificial.}
+
+% Con respecto a la pregunta: ¿Has recibido alguna formación o capacitación sobre el uso de herramientas de IA en tu carrera?
+
+% NO - 53 - 68.83%
+% SI - 24 - 31.17%
+
+De acuerdo a los datos registrados, el 68.83\% de los encuestados no ha recibido formación o capacitación sobre el uso de herramientas de inteligencia artificial en su carrera, mientras que el 31.17\% restante sí ha recibido dicha formación.
+
+Dicha información puede ser visualizada en la siguiente tabla:
+
+\begin{table}[H]
+  \centering
+  \renewcommand{\arraystretch}{1.5}
+  \begin{tabular}{l c c }
+    \hline
+    Respuestas & \(f_i\) & \(h_i\) \\
+    \hline
+    No & 53 & \(68.83\%\) \\
+    Sí & 24 & \(31.17\%\) \\
+    \hline
+    Total & 77 & \(100\%\) \\
+  \end{tabular}
+  \caption{Formación o capacitación en el uso de herramientas de IA en la carrera}
+  \label{tabla:formacionIA}
+\end{table}
+
+Para un análisis de este resultado enfocado a una herramienta muy útil llamada \textbf{distribución de Poisson}, se puede considerar la cantidad de personas que han recibido formación en IA como un evento raro, y por lo tanto, se puede modelar con una distribución de Poisson. La fórmula de la distribución de Poisson es:
+
+\begin{equation*}
+  P(X = k) = \dfrac{e^{-\lambda} \cdot \lambda^k}{k!}
+\end{equation*}
+
+Donde:
+\begin{itemize}
+  \item \(k = \text{Número de eventos} = 24\)
+  \item \(\lambda = \text{Tasa de eventos} = 0.3117 \approx 31.17\%\)
+\end{itemize}
+
+Se sabe que de 77 persomas encuestadas, 24 han recibido formación en IA, se desea saber la probabilidad de que 30 personas de 77 hayan recibido formación en IA. Para ello, se utiliza la fórmula de la distribución de Poisson.
+
+\textbf{Cálculo de la probabilidad:}
+
+\begin{equation*}
+  P(X = 30) = \dfrac{e^{-24} \cdot 24^{30}}{30!} \approx 0.036275 \approx 3.63\%
+\end{equation*}
+
+Por lo tanto, la probabilidad de que 30 personas de 77 hayan recibido formación en IA es de aproximadamente 3.63\%. Esto puede ser interpretado como un evento raro y poco probable.

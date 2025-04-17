@@ -1,0 +1,147 @@
+\documentclass{article}
+
+%===============================
+%
+%          📦 Paquetes
+%
+%===============================
+
+% === Configuración del documento y tipografía ===
+\usepackage[a4paper, top=3cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+
+% === Gráficos y representaciones visuales ===
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+% === Estilo y personalización ===
+\usepackage{titling}
+\usepackage{titlesec}
+\usepackage{tocloft} 
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{caption}
+
+% === Matemáticas y símbolos ===
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cancel}
+
+% === Estructura y disposición del contenido ===
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{indentfirst}
+
+% === Hipervínculos y referencias ===
+\usepackage{tocbibind}
+\usepackage{hyperref}
+
+%===============================
+%
+%          ⬆️⬇️ Cabeceras
+%
+%===============================
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[width=2cm]{assets/logo.png}}
+\fancyhead[R]{\textit{Estadística inferencial}}
+\fancyfoot[R]{\thepage}
+\setlength{\headheight}{22.9188pt}
+\addtolength{\topmargin}{-5.64944pt}
+
+%======================================
+%
+%          📑 Espaciado de Párrafos
+%
+%======================================
+
+\setlength{\parskip}{1.5em}
+\setlength{\parindent}{0pt}
+
+%======================================
+%
+%          📕 Estrucura del título
+%
+%======================================
+
+\title{
+  \pagenumbering{gobble}
+  \includegraphics[width=5cm]{./assets/logo-utp.png} \\
+  \vspace{1cm}
+  \textbf{Universidad Tecnológica del Perú} \\
+  \vspace{2cm}
+  \textbf{Relación entre la capacitación continua de los trabajadores y su productividad en una empresa de tecnología en Perú durante el año 2025} \\
+  \vspace{1cm}
+  \large \textbf{Para la asignatura de Estadística Inferencial}
+}
+\author{
+  \begin{tabular}{ll}
+    \textbf{Huatay Salcedo, Luis} & \texttt{U24218809} \\
+    \textbf{Torres Vara, Mateo} & \texttt{U24308542} \\
+    \textbf{Lizana Flores, Jhonjar} & \texttt{U22218613}
+  \end{tabular} \\\\
+  \texttt{Sección 44316}
+}
+
+\begin{document}
+\maketitle
+\begin{center}
+
+  Docente: Doc. Cesar Humberto Zavala Inga
+
+\end{center}
+
+%======================================
+%
+%          📚 Inicio del documento
+%
+%======================================
+
+\newpage
+
+% Inicio de la numeración de páginas (desde aquí)
+\pagenumbering{arabic}
+\setcounter{page}{2}  
+
+\tableofcontents
+\thispagestyle{fancy}
+
+% Introducción
+\include{components/introduccion/introduccion}
+
+% Marco Teórico
+\include{components/marco-teorico/marcoTeorico}
+
+% % Problemática
+% \include{components/problematica/problematica}
+
+% %Objetivos
+% \include{components/objetivos/objetivos}
+
+
+% % Términos estadísticos
+% \include{components/terminosEstadisticos/terminosEstadisticos}
+
+% %Recoleccion de datos
+% \include{components/dataharvest/recoleccionData}
+
+
+% % Metología
+% \include{components/metodologia/metodologia}
+
+% % Desarollo
+% \include{components/analisis-desarrollo/analisis}
+
+% % Conclusiones
+% \include{components/conclusiones/conclusiones}
+
+%Referencias
+\include{components/referencias/referencias}
+
+\end{document}
