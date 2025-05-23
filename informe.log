@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.3.23)  18 APR 2025 11:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.3.23)  23 MAY 2025 15:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -695,7 +695,7 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 ) (./informe.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
- (./components/introduccion/introduccion.aux) (./components/marco-teorico/marcoTeorico.aux) (./components/planteamiento-hipotesis/planteamientoHipotesis.aux) (./components/metodologia/metodologia.aux) (./components/referencias/referencias.aux))
+ (./components/introduccion/introduccion.aux) (./components/marco-teorico/marcoTeorico.aux) (./components/objetivos/objetivos.aux) (./components/dataharvest/recoleccionData.aux) (./components/planteamiento-hipotesis/planteamientoHipotesis.aux) (./components/metodologia/metodologia.aux) (./components/analisis-desarrollo/analisis.aux) (./components/interpretacion-resultados/interpretacion-resultados.aux) (./components/anexos/anexos.aux) (./components/referencias/referencias.aux))
 \openout1 = `informe.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
@@ -783,7 +783,7 @@ Package hyperref Info: Link coloring OFF on input line 92.
 \@outlinefile=\write4
 \openout4 = `informe.out'.
 
-<./assets/logo-utp.png, id=58, 2055.68pt x 493.845pt>
+<./assets/logo-utp.png, id=106, 2055.68pt x 493.845pt>
 File: ./assets/logo-utp.png Graphic file (type png)
 <use ./assets/logo-utp.png>
 Package pdftex.def Info: ./assets/logo-utp.png  used on input line 94.
@@ -808,7 +808,7 @@ LaTeX Info: Redefining \% on input line 1.
 
 
 
-<assets/logo.png, id=83, 1288.815pt x 437.635pt>
+<assets/logo.png, id=143, 1288.815pt x 437.635pt>
 File: assets/logo.png Graphic file (type png)
 <use assets/logo.png>
 Package pdftex.def Info: assets/logo.png  used on input line 116.
@@ -838,9 +838,9 @@ Package pdftex.def Info: assets/logo.png  used on input line 119.
 
 
 ]
-\openout2 = `components/planteamiento-hipotesis/planteamientoHipotesis.aux'.
+\openout2 = `components/objetivos/objetivos.aux'.
 
- (./components/planteamiento-hipotesis/planteamientoHipotesis.tex)
+ (./components/objetivos/objetivos.tex)
 
 File: assets/logo.png Graphic file (type png)
 <use assets/logo.png>
@@ -851,61 +851,200 @@ Package pdftex.def Info: assets/logo.png  used on input line 122.
 
 
 ]
-\openout2 = `components/metodologia/metodologia.aux'.
+\openout2 = `components/dataharvest/recoleccionData.aux'.
 
- (./components/metodologia/metodologia.tex)
+ (./components/dataharvest/recoleccionData.tex
+Overfull \hbox (33.26788pt too wide) in paragraph at lines 26--37
+ [][] 
+ []
+
+)
 
 File: assets/logo.png Graphic file (type png)
 <use assets/logo.png>
-Package pdftex.def Info: assets/logo.png  used on input line 139.
+Package pdftex.def Info: assets/logo.png  used on input line 125.
 (pdftex.def)             Requested size: 56.9055pt x 19.31876pt.
 [6
 
 
 
 ]
+\openout2 = `components/planteamiento-hipotesis/planteamientoHipotesis.aux'.
+
+ (./components/planteamiento-hipotesis/planteamientoHipotesis.tex)
 
 File: assets/logo.png Graphic file (type png)
 <use assets/logo.png>
-Package pdftex.def Info: assets/logo.png  used on input line 139.
+Package pdftex.def Info: assets/logo.png  used on input line 128.
 (pdftex.def)             Requested size: 56.9055pt x 19.31876pt.
-[7]
-\openout2 = `components/referencias/referencias.aux'.
+[7
 
- (./components/referencias/referencias.tex)
+
+
+]
+\openout2 = `components/metodologia/metodologia.aux'.
+
+ (./components/metodologia/metodologia.tex)
 
 File: assets/logo.png Graphic file (type png)
 <use assets/logo.png>
-Package pdftex.def Info: assets/logo.png  used on input line 148.
+Package pdftex.def Info: assets/logo.png  used on input line 131.
 (pdftex.def)             Requested size: 56.9055pt x 19.31876pt.
 [8
+
+
+
+]
+\openout2 = `components/analisis-desarrollo/analisis.aux'.
+
+ (./components/analisis-desarrollo/analisis.tex)
+
+File: assets/logo.png Graphic file (type png)
+<use assets/logo.png>
+Package pdftex.def Info: assets/logo.png  used on input line 135.
+(pdftex.def)             Requested size: 56.9055pt x 19.31876pt.
+[9
+
+
+
+]
+\openout2 = `components/interpretacion-resultados/interpretacion-resultados.aux'.
+
+ (./components/interpretacion-resultados/interpretacion-resultados.tex)
+
+File: assets/logo.png Graphic file (type png)
+<use assets/logo.png>
+Package pdftex.def Info: assets/logo.png  used on input line 138.
+(pdftex.def)             Requested size: 56.9055pt x 19.31876pt.
+[10
+
+
+
+]
+\openout2 = `components/anexos/anexos.aux'.
+
+ (./components/anexos/anexos.tex)
+
+File: assets/logo.png Graphic file (type png)
+<use assets/logo.png>
+Package pdftex.def Info: assets/logo.png  used on input line 141.
+(pdftex.def)             Requested size: 56.9055pt x 19.31876pt.
+[11
+
+
+
+]
+\openout2 = `components/referencias/referencias.aux'.
+
+ (./components/referencias/referencias.tex
+Underfull \hbox (badness 7631) in paragraph at lines 20--21
+\OT1/cmr/m/it/10 Sim-ple\OT1/cmr/m/n/10 . Re-cu-pe-ra-do de []$\OT1/cmtt/m/n/10 https : / / books . google . com . pe / books ? hl = es & lr = &id = pr5TEQAAQBAJ &
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+\OT1/cmtt/m/n/10 oi = fnd & pg = PR2 & dq = Ejercicios + resueltos + de + inferencia + estad % C3 % ADstica + y + del + modelo +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+\OT1/cmtt/m/n/10 lineal + simple & ots = T42RpsBjJu & sig = jAkyfuPBzL1v0o3tHDlm0S5LbGI & redir _ esc = y # v = onepage &
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+\OT1/cmtt/m/n/10 q = Ejercicios % 20resueltos % 20de % 20inferencia % 20estad % C3 % ADstica % 20y % 20del % 20modelo %
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+\OT1/cmr/m/n/10 Re-cu-pe-ra-do de []$\OT1/cmtt/m/n/10 https : / / books . google . com . pe / books ? hl = es & lr = &id = IHCHEAAAQBAJ & oi = fnd &
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+\OT1/cmtt/m/n/10 pg = PP1 & dq = Estad % C3 % ADstica + inferencial + aplicada + +Autor : +D % C3 % ADaz + Rodr % C3 % ADguez ,[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+\OT1/cmtt/m/n/10 +Mart % C3 % ADn + -[] + Autor & ots = Sf8Tno6kLg & sig = u1xdyAJline4t90FJ5YAAxxWKng & redir _ esc = y #
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+\OT1/cmtt/m/n/10 v = onepage & q = Estad % C3 % ADstica % 20inferencial % 20aplicada % 20 % 20Autor % 3A % 20D % C3 % ADaz %
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+\OT1/cmtt/m/n/10 pe / books ? hl = es & lr = &id = KZYQEAAAQBAJ & oi = fnd & pg = PA1 & dq = Estad % C3 % ADstica + Inferencial +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+\OT1/cmtt/m/n/10 +Autor : +Llin % C3 % A1s + Solano ,[] +Humberto & ots = Xpi0wWw3lo & sig = DWM-[]pZnBeIOjGyyL5sBk _ s _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+\OT1/cmtt/m/n/10 LWBQ & redir _ esc = y # v = onepage & q = Estad % C3 % ADstica % 20Inferencial % 20 % 20Autor % 3A % 20Llin %
+ []
+
+
+Underfull \hbox (badness 7722) in paragraph at lines 32--33
+[]\OT1/cmr/m/n/10 G^^Somez Vi-lle-gas, Mi-guel []Angel. \OT1/cmr/m/it/10 In-fe-ren-cia es-tad^^S^^Psti-ca\OT1/cmr/m/n/10 . Re-cu-pe-ra-do de []$\OT1/cmtt/m/n/10 https : / / books .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+\OT1/cmtt/m/n/10 google . com . pe / books ? hl = es & lr = &id = YOuODwAAQBAJ & oi = fnd & pg = PR9 & dq = Miguel + %C3 %
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+\OT1/cmtt/m/n/10 81ngel + G % C3 % B3mez + Villegas + ESTAD % C3 % 8DSITICA + INFERENCIAL & ots = KG2bqmMDNd & sig =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+\OT1/cmtt/m/n/10 xguJOxmXHDguzSQsmn17Gy-[]SlNA & redir _ esc = y # v = onepage & q = Miguel % 20 % C3 % 81ngel % 20G % C3 %
+ []
+
+)
+
+File: assets/logo.png Graphic file (type png)
+<use assets/logo.png>
+Package pdftex.def Info: assets/logo.png  used on input line 147.
+(pdftex.def)             Requested size: 56.9055pt x 19.31876pt.
+[12
 
 
 
 ] (./informe.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
- (./components/introduccion/introduccion.aux) (./components/marco-teorico/marcoTeorico.aux) (./components/planteamiento-hipotesis/planteamientoHipotesis.aux) (./components/metodologia/metodologia.aux) (./components/referencias/referencias.aux))
+ (./components/introduccion/introduccion.aux) (./components/marco-teorico/marcoTeorico.aux) (./components/objetivos/objetivos.aux) (./components/dataharvest/recoleccionData.aux) (./components/planteamiento-hipotesis/planteamientoHipotesis.aux) (./components/metodologia/metodologia.aux) (./components/analisis-desarrollo/analisis.aux) (./components/interpretacion-resultados/interpretacion-resultados.aux) (./components/anexos/anexos.aux) (./components/referencias/referencias.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `informe.out' has not changed.
-(rerunfilecheck)             Checksum: 147B57C71210D5639211C3834C3BB445;1923.
+(rerunfilecheck)             Checksum: 5018E71AC7830EA2027A2521DEFDD00B;4457.
  ) 
 Here is how much of TeX's memory you used:
- 35020 strings out of 475109
- 796878 string characters out of 5765325
- 1285022 words of memory out of 5000000
- 57429 multiletter control sequences out of 15000+600000
- 567522 words of font info for 70 fonts, out of 8000000 for 9000
+ 35230 strings out of 475109
+ 804669 string characters out of 5765325
+ 1295624 words of memory out of 5000000
+ 57563 multiletter control sequences out of 15000+600000
+ 569853 words of font info for 79 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
- 102i,15n,107p,983b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on informe.pdf (8 pages, 164310 bytes).
+ 102i,15n,107p,817b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on informe.pdf (12 pages, 265563 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 134 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
- 127 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 321 PDF objects out of 1000 (max. 8388607)
+ 270 compressed objects within 3 object streams
+ 53 named destinations out of 1000 (max. 500000)
+ 223 words of extra memory for PDF output out of 10000 (max. 10000000)
 

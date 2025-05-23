@@ -21,7 +21,7 @@
 % === Estilo y personalización ===
 \usepackage{titling}
 \usepackage{titlesec}
-\usepackage{tocloft} 
+\usepackage{tocloft}
 \usepackage{fancyhdr}
 \usepackage{setspace}
 \usepackage{caption}
@@ -107,7 +107,7 @@
 
 % Inicio de la numeración de páginas (desde aquí)
 \pagenumbering{arabic}
-\setcounter{page}{2}  
+\setcounter{page}{2}
 
 \tableofcontents
 \thispagestyle{fancy}
@@ -118,28 +118,27 @@
 % Marco Teórico
 \include{components/marco-teorico/marcoTeorico}
 
+%Objetivos
+\include{components/objetivos/objetivos}
+
+%Recoleccion de datos
+\include{components/dataharvest/recoleccionData}
+
 % Planteamiento de la Hipótesis
 \include{components/planteamiento-hipotesis/planteamientoHipotesis}
 
-% % Problemática
-% \include{components/problematica/problematica}
-
-% %Objetivos
-% \include{components/objetivos/objetivos}
-
-
-% % Términos estadísticos
-% \include{components/terminosEstadisticos/terminosEstadisticos}
-
-% %Recoleccion de datos
-% \include{components/dataharvest/recoleccionData}
-
-
-% % Metología
+% Metología
 \include{components/metodologia/metodologia}
 
-% % Desarollo
-% \include{components/analisis-desarrollo/analisis}
+
+% Desarollo
+\include{components/analisis-desarrollo/analisis}
+
+% Interpretación de resultados
+\include{components/interpretacion-resultados/interpretacion-resultados}
+
+% Anexos
+\include{components/anexos/anexos}
 
 % % Conclusiones
 % \include{components/conclusiones/conclusiones}
