@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.3)  4 JUN 2025 21:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.3)  5 JUN 2025 15:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -784,7 +784,7 @@ Package hyperref Info: Link coloring OFF on input line 92.
 \@outlinefile=\write4
 \openout4 = `informe.out'.
 
-<./assets/logo-utp.png, id=117, 2055.68pt x 493.845pt>
+<./assets/logo-utp.png, id=125, 2055.68pt x 493.845pt>
 File: ./assets/logo-utp.png Graphic file (type png)
 <use ./assets/logo-utp.png>
 Package pdftex.def Info: ./assets/logo-utp.png  used on input line 94.
@@ -809,7 +809,7 @@ LaTeX Info: Redefining \% on input line 1.
 
 
 
-<assets/logo.png, id=157, 1288.815pt x 437.635pt>
+<assets/logo.png, id=167, 1288.815pt x 437.635pt>
 File: assets/logo.png Graphic file (type png)
 <use assets/logo.png>
 Package pdftex.def Info: assets/logo.png  used on input line 116.
@@ -904,17 +904,39 @@ Package pdftex.def Info: assets/logo.png  used on input line 131.
 [9]
 \openout2 = `components/analisis-desarrollo/analisis.aux'.
 
- (components/analisis-desarrollo/analisis.tex)
+ (components/analisis-desarrollo/analisis.tex
+<assets/Boxplot.png, id=234, 662.694pt x 360.474pt>
+File: assets/Boxplot.png Graphic file (type png)
+<use assets/Boxplot.png>
+Package pdftex.def Info: assets/Boxplot.png  used on input line 59.
+(pdftex.def)             Requested size: 318.66948pt x 173.33907pt.
+
 
 File: assets/logo.png Graphic file (type png)
 <use assets/logo.png>
-Package pdftex.def Info: assets/logo.png  used on input line 135.
+Package pdftex.def Info: assets/logo.png  used on input line 69.
 (pdftex.def)             Requested size: 56.9055pt x 19.31876pt.
 [10
 
 
 
-]
+ <./assets/Boxplot.png>]
+Overfull \hbox (4.50642pt too wide) in paragraph at lines 103--104
+[]\OT1/cmr/m/n/10 La me-dia de pro-duc-ti-vi-dad en IT es \OT1/cmr/bx/n/10 [ME-DIA[]IT]$ $%\OT1/cmr/m/n/10 , mien-tras que en no-IT es \OT1/cmr/bx/n/10 [ME-DIA[]NOIT]$ $%\OT1/cmr/m/n/10 . 
+ []
+
+
+Overfull \hbox (9.81296pt too wide) in paragraph at lines 105--106
+[]\OT1/cmr/m/n/10 El in-ter-va-lo de con-fian-za pa-ra la di-fe-ren-cia de me-dias es \OT1/cmr/bx/n/10 ([LIM[]INFERIOR], [LIM[]SUPERIOR])\OT1/cmr/m/n/10 . 
+ []
+
+)
+
+File: assets/logo.png Graphic file (type png)
+<use assets/logo.png>
+Package pdftex.def Info: assets/logo.png  used on input line 135.
+(pdftex.def)             Requested size: 56.9055pt x 19.31876pt.
+[11]
 \openout2 = `components/interpretacion-resultados/interpretacion-resultados.aux'.
 
  (components/interpretacion-resultados/interpretacion-resultados.tex)
@@ -923,7 +945,7 @@ File: assets/logo.png Graphic file (type png)
 <use assets/logo.png>
 Package pdftex.def Info: assets/logo.png  used on input line 138.
 (pdftex.def)             Requested size: 56.9055pt x 19.31876pt.
-[11
+[12
 
 
 
@@ -936,7 +958,7 @@ File: assets/logo.png Graphic file (type png)
 <use assets/logo.png>
 Package pdftex.def Info: assets/logo.png  used on input line 141.
 (pdftex.def)             Requested size: 56.9055pt x 19.31876pt.
-[12
+[13
 
 
 
@@ -1024,7 +1046,7 @@ File: assets/logo.png Graphic file (type png)
 <use assets/logo.png>
 Package pdftex.def Info: assets/logo.png  used on input line 147.
 (pdftex.def)             Requested size: 56.9055pt x 19.31876pt.
-[13
+[14
 
 
 
@@ -1037,20 +1059,20 @@ LaTeX2e <2024-11-01>
 L3 programming layer <2024-10-09>
  ***********
 Package rerunfilecheck Info: File `informe.out' has not changed.
-(rerunfilecheck)             Checksum: 6B100F73B7228239DFC60CE160724D28;4977.
+(rerunfilecheck)             Checksum: 2F261D5DB05A1BD7FFCD83ACB51E17B7;5662.
  ) 
 Here is how much of TeX's memory you used:
- 35126 strings out of 473701
- 818195 string characters out of 5716049
+ 35154 strings out of 473701
+ 818759 string characters out of 5716049
  1294454 words of memory out of 5000000
- 57490 multiletter control sequences out of 15000+600000
- 569420 words of font info for 80 fonts, out of 8000000 for 9000
+ 57511 multiletter control sequences out of 15000+600000
+ 569729 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,15n,107p,840b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Mateo Torres\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/Mateo Torres/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Mateo Torres/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Mateo Torres/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/Mateo Torres/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/Mateo Torres/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Mateo Torres/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/Mateo Torres/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Mateo Torres/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Mateo Torres/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Mateo Torres/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Mateo Torres/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Mateo Torres/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Mateo Torres/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Mateo Torres/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Mateo Torres/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Mateo Torres/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Mateo Torres/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Mateo Torres/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Mateo Torres/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Mateo Torres/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Mateo Torres/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on informe.pdf (13 pages, 377472 bytes).
+Output written on informe.pdf (14 pages, 470437 bytes).
 PDF statistics:
- 381 PDF objects out of 1000 (max. 8388607)
- 64 named destinations out of 1000 (max. 500000)
- 247 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 401 PDF objects out of 1000 (max. 8388607)
+ 70 named destinations out of 1000 (max. 500000)
+ 268 words of extra memory for PDF output out of 10000 (max. 10000000)
 

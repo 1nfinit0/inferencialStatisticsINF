@@ -474,6 +474,15 @@ OUTPUT components\analisis-desarrollo\analisis.aux
 INPUT .\components\analisis-desarrollo\analisis.tex
 INPUT .\components\analisis-desarrollo\analisis.tex
 INPUT components\analisis-desarrollo\analisis.tex
+INPUT .\assets\Boxplot.png
+INPUT .\assets\Boxplot.png
+INPUT .\assets\Boxplot.png
+INPUT .\assets\Boxplot.png
+INPUT .\assets\Boxplot.png
+INPUT .\assets\Boxplot.png
+INPUT .\assets\Boxplot.png
+INPUT .\assets\logo.png
+INPUT C:\Users\Mateo Torres\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx5.tfm
 INPUT .\assets\logo.png
 INPUT .\components\interpretacion-resultados\interpretacion-resultados.tex
 INPUT .\components\interpretacion-resultados\interpretacion-resultados.tex
