@@ -13,19 +13,18 @@
 \contentsline {subsection}{\numberline {6.1}Enfoque estadístico}{8}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Prueba de hipótesis para diferencia de medias}{8}{subsection.6.2}%
 \contentsline {subsection}{\numberline {6.3}Intervalos de confianza}{8}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Validación de supuestos}{9}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Análisis complementarios}{9}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.4}Análisis complementarios}{9}{subsection.6.4}%
 \contentsline {section}{\numberline {7}Análisis y Desarrollo}{10}{section.7}%
 \contentsline {subsection}{\numberline {7.1}Estadística descriptiva}{10}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7.2}Prueba de hipótesis para diferencia de medias}{11}{subsection.7.2}%
 \contentsline {subsection}{\numberline {7.3}Intervalo de confianza para la diferencia de medias}{11}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Visualización de resultados}{11}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Resumen de hallazgos}{11}{subsection.7.5}%
-\contentsline {section}{\numberline {8}Interpretación de resultados}{12}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Decisiones}{12}{subsection.8.1}%
-\contentsline {section}{\numberline {9}Anexos}{13}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Anexo 1: Tabla de frecuencias acumuladas Z}{13}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Anexo 2: Tabla de frecuencias acumuladas T}{13}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Anexo 3: Tabla de frecuencias acumuladas $\chi ^2$}{13}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Anexo 4: Tabla de frecuencias acumuladas F}{13}{subsection.9.4}%
-\contentsline {section}{Referencias}{14}{subsection.9.4}%
+\contentsline {subsection}{\numberline {7.4}Visualización de resultados}{12}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Resumen de hallazgos}{12}{subsection.7.5}%
+\contentsline {section}{\numberline {8}Interpretación de resultados}{13}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Decisiones}{13}{subsection.8.1}%
+\contentsline {section}{\numberline {9}Anexos}{14}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Anexo 1: Tabla de frecuencias acumuladas Z}{14}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Anexo 2: Tabla de frecuencias acumuladas T}{14}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Anexo 3: Tabla de frecuencias acumuladas $\chi ^2$}{14}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Anexo 4: Tabla de frecuencias acumuladas F}{14}{subsection.9.4}%
+\contentsline {section}{Referencias}{15}{subsection.9.4}%

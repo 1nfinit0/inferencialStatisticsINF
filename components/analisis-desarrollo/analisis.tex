@@ -65,12 +65,47 @@ No-IT & 152 & \textbf{44.51\%} & \textbf{27.64\%} & \textbf{44.00\%} \\
 
 Se realizó una prueba t para muestras independientes bajo los siguientes parámetros:
 
+\begin{multicols}{2}
+
+\subsubsection*{Fórmula y cálculo del estadístico t}
+
+El estadístico t para la diferencia de medias (varianzas no iguales) se calcula así:
+\begin{equation*}
+    t = \frac{\bar{X}_{IT} - \bar{X}_{noIT}}{\sqrt{\frac{s_{IT}^2}{n_{IT}} + \frac{s_{noIT}^2}{n_{noIT}}}}
+\end{equation*}
+
+En este caso:
+\begin{equation*}
+    t = \frac{56.34 - 44.51}{\sqrt{\frac{30.62^2}{48} + \frac{27.64^2}{152}}} = 2.1836
+\end{equation*}
+
+\vfill
+\columnbreak
+
+\subsubsection*{Fórmula y cálculo de los grados de libertad (Welch)}
+
+Los grados de libertad se calculan con la fórmula de Welch:
+
+\begin{equation*}
+    gl = \frac{\left( \frac{s_{IT}^2}{n_{IT}} + \frac{s_{noIT}^2}{n_{noIT}} \right)^2}
+    {\frac{\left( \frac{s_{IT}^2}{n_{IT}} \right)^2}{n_{IT}-1} + \frac{\left( \frac{s_{noIT}^2}{n_{noIT}} \right)^2}{n_{noIT}-1}}
+\end{equation*}
+
+En este caso:
+\begin{equation*}
+gl = \frac{\left( \frac{30.62^2}{48} + \frac{27.64^2}{152} \right)^2}
+{\frac{\left( \frac{30.62^2}{48} \right)^2}{47} + \frac{\left( \frac{27.64^2}{152} \right)^2}{151}} = 52.06
+\end{equation*}
+
+\end{multicols}
+
+\subsubsection*{Resultados de la prueba t}
 \begin{itemize}
     \item \textbf{Hipótesis nula ($H_0$):} $\mu_{IT} = \mu_{no-IT}$
     \item \textbf{Hipótesis alternativa ($H_1$):} $\mu_{IT} \neq \mu_{no-IT}$
     \item \textbf{Nivel de significancia:} $\alpha = 0.05$
     \item \textbf{Estadístico calculado:} $t = \textbf{2.1836}$
-    \item \textbf{Valor crítico:} $t_{0.025, 52.06} = \textbf{2.0066}$
+    \item \textbf{Valor crítico:} $t_{0.025; 52.06} = \textbf{2.0066}$
     \item \textbf{p-valor:} \textbf{0.0335}
 \end{itemize}
 
@@ -79,20 +114,41 @@ Se realizó una prueba t para muestras independientes bajo los siguientes parám
 
 \subsection{Intervalo de confianza para la diferencia de medias}
 
-El intervalo de confianza al 95\% para la diferencia de medias es:
+El intervalo de confianza al 95\% para la diferencia de medias se calcula así:
 
 \[
-IC_{95\%} = ([LIM\_INFERIOR],\ [LIM\_SUPERIOR])
+IC_{95\%} = (\bar{X}_{IT} - \bar{X}_{noIT}) \pm t_{0.025; gl} \cdot \sqrt{\frac{s_{IT}^2}{n_{IT}} + \frac{s_{noIT}^2}{n_{noIT}}}
 \]
 
+Sustituyendo los valores:
+
+\[
+IC_{95\%} = (56.34 - 44.51) \pm 2.0066 \cdot \sqrt{\frac{30.62^2}{48} + \frac{27.64^2}{152}}
+\]
+
+\begin{align*}
+IC_{95\%} &= 11.83 \pm 2.0066 \cdot \sqrt{19.54 + 5.02} \\
+&= 11.83 \pm 2.0066 \cdot \sqrt{24.56} \\
+&= 11.83 \pm 2.0066 \cdot 4.956 \\
+&= 11.83 \pm 9.945 \\
+&= (11.83 - 9.945;\ 11.83 + 9.945) \\
+&= (1.885;\ 21.775)
+\end{align*}
+
+Por los cálculos exactos obtenidos en Python:
+
+\(
+IC_{95\%} = (0.9593,\ 22.7126)
+\)
+
 \noindent
-\textbf{Interpretación:} Con un 95\% de confianza, la verdadera diferencia en productividad entre los departamentos IT y no-IT está entre \textbf{[LIM\_INFERIOR]} y \textbf{[LIM\_SUPERIOR]}. Si el intervalo incluye el cero, no hay evidencia suficiente para afirmar una diferencia significativa.
+\textbf{Interpretación:} Con un 95\% de confianza, la verdadera diferencia en productividad entre los departamentos IT y no-IT está entre \textbf{(0.9593, 22.7126)} y \textbf{(0.9593, 22.7126)}. Existe una diferencia significativa entre las medias de productividad de IT y no-IT.
 
 \subsection{Visualización de resultados}
 
 \begin{figure}[H]
     \centering
-    %\includegraphics[width=0.7\textwidth]{ruta/a/histograma.png}
+    \includegraphics[width=0.7\textwidth]{assets/histograma.png}
     \fbox{\parbox{0.7\textwidth}{\centering \textit{[Histograma de productividad por grupo]}}}
     \caption{Histograma de la productividad en IT y no-IT}
 \end{figure}
@@ -100,15 +156,14 @@ IC_{95\%} = ([LIM\_INFERIOR],\ [LIM\_SUPERIOR])
 \subsection{Resumen de hallazgos}
 
 \begin{itemize}
-    \item La media de productividad en IT es \textbf{[MEDIA\_IT]\%}, mientras que en no-IT es \textbf{[MEDIA\_NOIT]\%}.
-    \item La prueba t arroja un estadístico de \textbf{[T\_VALUE]} y un p-valor de \textbf{[P\_VALOR]}.
-    \item El intervalo de confianza para la diferencia de medias es \textbf{([LIM\_INFERIOR], [LIM\_SUPERIOR])}.
+    \item La media de productividad en IT es \textbf{56.34\%}, mientras que en no-IT es \textbf{44.51\%}.
+    \item La prueba t arroja un estadístico de \textbf{2.1836} y un p-valor de \textbf{0.0335}.
+    \item El intervalo de confianza para la diferencia de medias es \textbf{(0.9593, 22.7126)}.
     \item \textbf{[Conclusión sobre si existe o no diferencia significativa, según los resultados]}
 \end{itemize}
 
 \vspace{0.5cm}
 \noindent
-\textbf{Nota:} Los valores numéricos y gráficos serán reemplazados por los resultados exactos una vez completados los cálculos estadísticos.
 
 
 
