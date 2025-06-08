@@ -1,6 +1,57 @@
+% metodologia.tex
 \section{Metodología}
 
-	\subsection{Enfoque estatístico utilizado} 
-	
-	\subsection{Justificación de la elección del enfoque} 
-	
+	\subsection{Enfoque estadístico}
+	El estudio emplea técnicas de estadística inferencial para contrastar la hipótesis de diferencia de medias entre grupos independientes (departamento IT vs. no-IT), siguiendo los procedimientos establecidos en el temario:
+
+	\begin{itemize}
+		\item \textbf{Tipo de muestreo:} Aleatorio simple (asumiendo representatividad de la muestra disponible)
+		\item \textbf{Población:} Trabajadores de empresas tecnológicas peruanas
+		\item \textbf{Muestra:} 200 empleados (n\textsubscript{IT}=48, n\textsubscript{no-IT}=152)
+		\item \textbf{Nivel de confianza:} 95\% ($\alpha$=0.05)
+	\end{itemize}
+
+	\subsection{Prueba de hipótesis para diferencia de medias}
+	Se aplicará el procedimiento de contraste de hipótesis para dos medias con varianzas poblacionales desconocidas, según lo cubierto en el temario:
+
+	\begin{align*}
+		H_0: \mu_{IT} &= \mu_{no-IT} \\
+		H_1: \mu_{IT} &\neq \mu_{no-IT}
+	\end{align*}
+
+		\subsubsection*{Justificación técnica}
+		\begin{itemize}
+			\item \textbf{Distribución t de Student:} Aplicable por desconocerse las varianzas poblacionales
+			\item \textbf{Teorema del Límite Central:} Valida la normalidad aproximada con n > 30 por grupo
+			\item \textbf{Fórmula del estadístico:} 
+			$t = \frac{(\bar{X}_1 - \bar{X}_2)}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}$
+			\item \textbf{Regla de decisión:} Rechazar $H_0$ si $|t| > t_{\alpha/2, gl}$
+		\end{itemize}
+
+	\subsection{Intervalos de confianza}
+	Se calculará el intervalo para la diferencia de medias según el temario:
+
+		\subsubsection*{Fórmula e interpretación}
+		\begin{itemize}
+			\item \textbf{Fórmula:} $IC_{95\%} = (\bar{X}_1 - \bar{X}_2) \pm t_{\alpha/2, gl} \cdot \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}$
+			\item \textbf{Interpretación:} "Con 95\% de confianza, la verdadera diferencia en productividad entre departamentos IT y no-IT está entre [LÍMITE INFERIOR] y [LÍMITE SUPERIOR]"
+		\end{itemize}
+
+	\subsection{Análisis complementarios}
+	\begin{itemize}
+		\item \textbf{Tablas estadísticas:} Uso de tablas t-Student para valores críticos
+		\item \textbf{Análisis descriptivo:} Medidas de tendencia central y dispersión por grupo
+	\end{itemize}
+
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{|l|c|c|}
+		\hline
+		\textbf{Elemento} & \textbf{Simbología} & \textbf{Valor} \\ \hline
+		Nivel de significancia & $\alpha$ & 0.05 \\ \hline
+		Grados de libertad & $gl$ & $n_1 + n_2 - 2$ \\ \hline
+		Valor crítico bilateral & $t_{\alpha/2, gl}$ & $\pm 1.96$ \\ \hline
+		Error estándar & $SE$ & $\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}$ \\ \hline
+		\end{tabular}
+		\caption{Parámetros estadísticos según temario}
+	\end{table}
