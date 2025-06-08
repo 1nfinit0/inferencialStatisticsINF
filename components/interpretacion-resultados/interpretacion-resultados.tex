@@ -1,4 +1,28 @@
-% interpretacion-resultados.tex
 \section{Interpretación de resultados}
 
+Los resultados obtenidos mediante el análisis estadístico permiten interpretar con fundamento si existe una diferencia significativa entre la productividad media de los trabajadores del departamento de IT frente a los de otros departamentos (no-IT).
+
+Esto puede ser crucial para entender el impacto de las herramientas tecnológicas y la inteligencia artificial en el desempeño laboral, así como para tomar decisiones informadas sobre la gestión del talento humano en la empresa.
+
+La \textbf{media de productividad} en el grupo IT fue de \textbf{56.34\%}, mientras que en el grupo no-IT fue de \textbf{44.51\%}, lo que ya sugiere una diferencia inicial observable. Sin embargo, para confirmar si esta diferencia es estadísticamente significativa, se aplicó una \textit{prueba t para muestras independientes}, que arrojó los siguientes resultados:
+
+\begin{itemize}
+    \item Estadístico $t = 2.1836$
+    \item $p$-valor = 0.0335
+    \item Intervalo de confianza al 95\%: (0.9593\%, 22.7126\%)
+\end{itemize}
+
+Dado que el \textit{p-valor} es menor que el nivel de significancia ($\alpha = 0.05$), y que el intervalo de confianza no contiene el valor 0, \textbf{podemos afirmar que la diferencia entre las medias es significativa}. Esto significa que la mayor productividad observada en el grupo IT no se debe al azar, sino que puede atribuirse a factores propios del contexto tecnológico en el que operan estos trabajadores.
+
+Específicamente, se interpreta que, con un 95\% de confianza, \textbf{la productividad de los empleados del área IT supera en promedio entre 0.96\% y 22.71\% a la de sus pares en departamentos no tecnológicos}. Esta amplitud del intervalo sugiere una posible variabilidad entre individuos, pero consolida la evidencia de un mejor desempeño promedio en el área tecnológica, lo que a su vez, podría estar relacionado con el uso de herramientas avanzadas como la inteligencia artificial, que facilitan y optimizan las tareas diarias de los empleados.
+
 \subsection{Decisiones}
+
+Con base en los resultados obtenidos, se toma la siguiente \textbf{decisión estadística}:
+
+\begin{itemize}
+    \item \textbf{Se rechaza la hipótesis nula ($H_0$)} que afirmaba que no existía diferencia significativa entre las productividades medias de los departamentos IT y no-IT.
+    \item \textbf{Se acepta la hipótesis alternativa ($H_1$)}: sí existe una diferencia significativa en la productividad media entre ambos grupos.
+\end{itemize}
+
+Esta decisión respalda empíricamente la idea de que el contexto tecnológico, posiblemente influenciado por el uso de herramientas de inteligencia artificial, está asociado a una mayor productividad laboral.

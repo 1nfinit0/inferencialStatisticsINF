@@ -1,0 +1,515 @@
+\subsection{Tipo de muestreo: \textit{Muestreo aleatorio simple}}
+
+En este caso particular, se utiliza el muestreo aleatorio simple, que es un método de muestreo en el cual cada individuo de la población tiene la misma probabilidad de ser seleccionado. Este enfoque es fundamental para garantizar la representatividad de la muestra y la validez de los resultados obtenidos.
+
+Dada una población \( X \), se llama muestra aleatoria simple de tamaño \( n \) a la repetición de \( X_1, \ldots, X_n \) variables aleatorias independientes con distribución igual a la de \( X \). Es decir, la función de distribución de la muestra \((x_1, \ldots, x_n)\) es
+
+\[F(x_1, \ldots, x_n) = \prod_{i=1}^n F(x_i)\]
+
+donde \( F(x) \) es la función de distribución de la población \( X \) que como se ha dicho sigue dada por un elemento de \( P \).
+
+\textbf{Según el rubro Tech:}
+
+Supongamos que una empresa tecnológica tiene una base de datos de \( N = 500 \) desarrolladores que han trabajado en proyectos de inteligencia artificial. Si se desea realizar un análisis sobre las habilidades técnicas de estos desarrolladores, se puede extraer una muestra aleatoria simple de tamaño \( n = 5 \). La probabilidad de que todos los desarrolladores seleccionados tengan experiencia en Python, cuando se extraen \textit{con reemplazamiento}, es:
+
+\[P\{X_1 = \text{Python}, \ldots, X_5 = \text{Python}\} = \prod_{i=1}^{5} P\{X_i = \text{Python}\}\]
+
+\[= \left( \frac{400}{500} \right)^5 = 0'32768.\]
+
+Cuando se extraen \textit{sin reemplazamiento}, la probabilidad es:
+
+\[P\{X_1 = \text{Python}, \ldots, X_5 = \text{Python}\} = \frac{\binom{400}{5} \binom{100}{0}}{\binom{500}{5}} = 0'326035,\]
+
+lo que parece una aproximación aceptable.
+
+Este enfoque permite a la empresa realizar análisis representativos sobre las habilidades de los desarrolladores y tomar decisiones estratégicas basadas en datos. Problema adaptado de: \cite{GomezVillegas}
+
+\subsection{Cálculo del tamaño de muestra}
+
+Una startup de análisis de datos quiere estimar la proporción de usuarios de smartphones que utilizan aplicaciones de banca móvil al menos 3 veces por semana. Según estudios preliminares, se estima que esta proporción es del 65\%. Si la población objetivo es de 50,000 usuarios en una ciudad tech y se desea un nivel de confianza del 95\% con un margen de error del 4\%: 
+
+Obtenido de \cite{DiazRodriguez}
+
+\begin{enumerate}
+    \item Calcule el tamaño muestral requerido considerando la población finita.
+    \item Interprete el resultado en el contexto de aplicaciones financieras.
+\end{enumerate}
+
+\textbf{Solución:}
+
+\subsection*{Datos:}
+\begin{itemize}
+    \item Población total ($N$) = 50,000 usuarios
+    \item Proporción estimada ($p$) = 0.65
+    \item Margen de error ($E$) = 0.04
+    \item Nivel de confianza 95\% $\Rightarrow z_{\alpha/2} = 1.96$
+\end{itemize}
+
+\subsection*{Fórmula para población finita:}
+\[ n = \frac{N \cdot z^2 \cdot p(1-p)}{(N-1)E^2 + z^2 \cdot p(1-p)} \]
+
+\subsection*{Cálculos:}
+1. Cálculo inicial sin corrección:
+\[ n_0 = \frac{z^2 \cdot p(1-p)}{E^2} = \frac{(1.96)^2 \cdot 0.65 \cdot 0.35}{(0.04)^2} \approx 546.2 \]
+
+2. Aplicando corrección por población finita:
+\[ n = \frac{50000 \cdot 546.2}{50000 + 546.2 - 1} \approx 540.3 \]
+
+\subsection*{Resultado:}
+El tamaño muestral requerido es \boxed{541} usuarios.
+
+\subsection*{Interpretación:}
+Para estimar la proporción real de usuarios frecuentes de banca móvil entre 50,000 posibles clientes, con un 95\% de confianza y ±4\% de precisión, la startup necesita encuestar a 541 usuarios seleccionados aleatoriamente. Este tamaño muestral considera:
+\begin{itemize}
+    \item La naturaleza finita de la población
+    \item La variabilidad esperada (65\% de uso estimado)
+    \item Los requisitos de precisión del estudio
+\end{itemize}
+
+Este análisis es crucial para dimensionar correctamente estudios de mercado en aplicaciones fintech y optimizar recursos en startups tecnológicas.
+
+\subsection{Distribución muestral: \textit{Varianza conocida}}
+
+Un equipo de DataOps en una empresa de inteligencia artificial ha determinado que el tiempo de procesamiento de pipelines de datos sigue una distribución con media desconocida y desviación estándar de 8.5 minutos. Para optimizar los recursos en la nube, el equipo analiza 64 procesos aleatorios:
+
+Reenfoque del problema obtenido de \cite{LopezRol}
+
+\begin{enumerate}
+    \item Calcule la probabilidad de que el tiempo promedio de procesamiento difiera de la media poblacional en menos de 2 minutos.
+    \item Interprete los resultados para la planificación de recursos cloud.
+\end{enumerate}
+
+\textbf{Solución:}
+
+\subsection*{Datos:}
+\begin{itemize}
+    \item Desviación estándar poblacional ($\sigma$) = 8.5 minutos
+    \item Tamaño muestral ($n$) = 64 procesos
+    \item Margen de diferencia ($\epsilon$) = 2 minutos
+    \item Nivel de confianza implícito = 95\% (para interpretación)
+\end{itemize}
+
+\subsection*{Procedimiento:}
+
+1. Cálculo del error estándar:
+\[ \sigma_{\bar{X}} = \frac{\sigma}{\sqrt{n}} = \frac{8.5}{\sqrt{64}} = 1.0625 \text{ minutos} \]
+
+2. Estandarización del margen:
+\[ Z = \frac{\epsilon}{\sigma_{\bar{X}}} = \frac{2}{1.0625} \approx 1.882 \]
+
+3. Cálculo de probabilidad:
+\[ P(-1.882 < Z < 1.882) = 2 \times P(Z < 1.882) - 1 \approx 2 \times 0.9699 - 1 = 0.9398 \]
+
+\subsection*{Resultado:}
+La probabilidad es de \boxed{93.98\%}.
+
+\subsection*{Interpretación Técnica:}
+\begin{itemize}
+    \item Existe un 93.98\% de probabilidad de que el tiempo promedio observado en la muestra de 64 procesos esté dentro del rango $\mu \pm 2$ minutos.
+    \item Para la planificación cloud:
+    \begin{itemize}
+        \item Este margen permite optimizar la asignación de recursos computacionales
+        \item Se puede esperar consistencia en los tiempos de procesamiento
+        \item Los resultados validan que el muestreo es adecuado para monitorear el rendimiento
+    \end{itemize}
+\end{itemize}
+
+\subsection*{Aplicación en DevOps:}
+Este análisis permite:
+\begin{itemize}
+    \item Dimensionar adecuadamente las instancias cloud
+    \item Predecir tiempos de ejecución para pipelines críticos
+    \item Establecer SLAs confiables para clientes internos
+    \item Detectar desviaciones significativas del rendimiento esperado
+\end{itemize}
+
+\newpage
+
+
+\subsection{Comparación de dos medias con varianzas desconocidas}
+
+Un estudio compara el rendimiento de dos algoritmos de compresión de datos (Algoritmo X y Algoritmo Y) en términos de tasa de compresión promedio (\%). Se realizaron 20 pruebas independientes para cada algoritmo, obteniendo:
+
+Reenfoque del problema obtenido de \cite{LlinasSolano}
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+Algoritmo & Media muestral (\%) & Desviación estándar (\%) \\
+\midrule
+X & 78.5 & 5.2 \\
+Y & 82.3 & 6.7 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Asumiendo distribuciones normales con varianzas desconocidas y diferentes, determine la probabilidad de que el Algoritmo Y tenga una tasa de compresión promedio mayor que el Algoritmo X en al menos 5 puntos porcentuales.
+
+\subsubsection*{Desarrollo}
+\subsubsection*{Datos del problema}
+\begin{itemize}
+\item Tamaños muestrales: $n_X = n_Y = 20$
+\item Medias muestrales: $\bar{X} = 78.5\%$, $\bar{Y} = 82.3\%$
+\item Desviaciones estándar: $s_X = 5.2\%$, $s_Y = 6.7\%$
+\item Diferencia a evaluar: $\Delta = 5\%$
+\end{itemize}
+
+\subsubsection*{Cálculo del error estándar}
+\[
+SE = \sqrt{\frac{s_X^2}{n_X} + \frac{s_Y^2}{n_Y}} = \sqrt{\frac{5.2^2}{20} + \frac{6.7^2}{20}} \approx 1.89\%
+\]
+
+\subsubsection*{Estadístico t calculado}
+\[
+t = \frac{(\bar{Y} - \bar{X}) - \Delta}{SE} = \frac{(82.3-78.5)-5}{1.89} \approx -0.74
+\]
+
+\subsubsection*{Grados de libertad}
+\[
+\nu \approx \frac{\left(\frac{s_X^2}{n_X} + \frac{s_Y^2}{n_Y}\right)^2}{\frac{(s_X^2/n_X)^2}{n_X-1} + \frac{(s_Y^2/n_Y)^2}{n_Y-1}} \approx 36.2
+\]
+
+\subsubsection*{Probabilidad}
+\[
+P(T > -0.74) \approx 0.767 \text{ (76.7\%)}
+\]
+
+\subsubsection*{Resultado}
+La probabilidad es de \boxed{76.7\%}.
+
+\subsubsection*{Interpretación}
+Existe un 76.7\% de probabilidad de que el Algoritmo Y supere al Algoritmo X en al menos 5 puntos porcentuales de tasa de compresión, considerando las variaciones observadas en las muestras.
+
+\subsection{Intervalo de confianza para diferencia de proporciones}
+
+\subsubsection*{Problema}
+Una empresa tecnológica desea comparar la tasa de adopción de dos herramientas de desarrollo entre programadores frontend y backend. En una encuesta a 350 desarrolladores frontend, 210 adoptaron la herramienta A (60\%). Entre 400 desarrolladores backend, 180 adoptaron la misma herramienta (45\%). Construya un intervalo de confianza del 95\% para la diferencia real en las tasas de adopción entre ambos grupos e interprete los resultados.
+
+\subsubsection*{Solución}
+
+\subsubsection*{Datos muestrales}
+\begin{itemize}
+\item Frontend: $n_1 = 350$, $x_1 = 210$, $\hat{p}_1 = 0.60$
+\item Backend: $n_2 = 400$, $x_2 = 180$, $\hat{p}_2 = 0.45$
+\item Nivel de confianza: 95\% ($z_{\alpha/2} = 1.96$)
+\end{itemize}
+
+\subsubsection*{Estimación de la diferencia}
+\[
+\hat{p}_1 - \hat{p}_2 = 0.60 - 0.45 = 0.15 \text{ (15 puntos porcentuales)}
+\]
+
+\subsubsection*{Error estándar}
+\[
+SE = \sqrt{\frac{\hat{p}_1(1-\hat{p}_1)}{n_1} + \frac{\hat{p}_2(1-\hat{p}_2)}{n_2}} = \sqrt{\frac{0.60 \times 0.40}{350} + \frac{0.45 \times 0.55}{400}} \approx 0.0346
+\]
+
+\subsubsection*{Intervalo de confianza}
+\[
+IC_{95\%} = (\hat{p}_1 - \hat{p}_2) \pm z_{\alpha/2} \times SE = 0.15 \pm 1.96 \times 0.0346
+\]
+\[
+= (0.15 - 0.0678, 0.15 + 0.0678) = (0.0822, 0.2178)
+\]
+
+\subsubsection*{Resultado}
+El intervalo de confianza del 95\% para la diferencia en tasas de adopción es \boxed{(8.22\%, 21.78\%)}.
+
+\subsubsection*{Interpretación}
+\begin{itemize}
+\item Con 95\% de confianza, la verdadera diferencia en tasas de adopción entre desarrolladores frontend y backend se encuentra entre 8.22 y 21.78 puntos porcentuales
+\item Como el intervalo no contiene al cero, existe evidencia estadística de una diferencia significativa
+\item La herramienta A tiene mayor adopción entre desarrolladores frontend que entre backend
+\item La magnitud de la diferencia es clínicamente relevante (mínimo 8.22\% de diferencia)
+\end{itemize}
+
+\subsubsection*{Conclusión técnica}
+Los resultados sugieren que:
+\begin{itemize}
+\item Deberían investigarse los motivos de la menor adopción en backend
+\item Las estrategias de marketing podrían segmentarse por especialidad
+\item Se recomienda realizar pruebas A/B con ajustes específicos para backend
+\end{itemize}
+
+\newpage
+
+\subsection{Prueba de hipótesis para la media (varianza conocida)}
+
+\subsubsection*{Problema tecnológico}
+Una empresa de cloud computing afirma que sus servidores tienen un tiempo promedio de respuesta de 120 ms con desviación estándar de 15 ms (varianza conocida). Tras una actualización del sistema, se midieron 30 servidores obteniendo:
+\begin{itemize}
+\item Media muestral: 115 ms
+\item Desviación estándar muestral: 12 ms
+\end{itemize}
+
+Realice las siguientes pruebas con $\alpha = 0.05$:
+\begin{enumerate}
+\item Pruebe si el tiempo de respuesta disminuyó (varianza conocida)
+\item Verifique si la variabilidad cambió (prueba de varianza)
+\end{enumerate}
+
+\subsubsection*{Solución}
+
+\subsubsection*{Parte 1: Prueba para la media (varianza conocida $\sigma^2 = 15^2$)}
+\begin{itemize}
+\item $H_0: \mu = 120$ ms
+\item $H_1: \mu < 120$ ms (prueba unilateral izquierda)
+\item Estadístico Z:
+\[
+Z = \frac{\bar{X} - \mu_0}{\sigma/\sqrt{n}} = \frac{115 - 120}{15/\sqrt{30}} \approx -1.826
+\]
+\item Valor crítico: $Z_{0.05} = -1.645$
+\item Decisión: Rechazar $H_0$ ($-1.826 < -1.645$)
+\item Conclusión: Evidencia suficiente para afirmar que el tiempo de respuesta disminuyó
+\end{itemize}
+
+\subsubsection*{Parte 2: Prueba para la varianza}
+\begin{itemize}
+\item $H_0: \sigma^2 = 15^2 = 225$ ms$^2$
+\item $H_1: \sigma^2 \neq 225$ ms$^2$ (prueba bilateral)
+\item Estadístico $\chi^2$:
+\[
+\chi^2 = \frac{(n-1)s^2}{\sigma_0^2} = \frac{29 \times 12^2}{225} \approx 18.56
+\]
+\item Valores críticos: $\chi^2_{0.025,29} = 16.05$ y $\chi^2_{0.975,29} = 45.72$
+\item Decisión: No rechazar $H_0$ ($16.05 < 18.56 < 45.72$)
+\item Conclusión: No hay evidencia de cambio en la variabilidad
+\end{itemize}
+
+\subsubsection*{Interpretación técnica}
+\begin{itemize}
+\item La actualización redujo significativamente el tiempo promedio de respuesta
+\item La consistencia en los tiempos de respuesta se mantuvo estable
+\item Recomendaciones:
+\begin{itemize}
+\item Implementar la actualización en toda la flota de servidores
+\item Monitorear continuamente el desempeño
+\item Considerar pruebas adicionales para optimizar aún más el rendimiento
+\end{itemize}
+\end{itemize}
+
+
+\subsection{Prueba de hipótesis para diferencia de medias}
+
+\subsubsection*{Problema}
+Un estudio compara el rendimiento académico entre estudiantes de ingeniería de dos universidades tecnológicas. Se obtuvieron los siguientes datos de promedio ponderado (PW) de muestras aleatorias:
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+& Universidad A & Universidad B \\
+\midrule
+Tamaño muestral ($n$) & 45 & 50 \\
+Media muestral ($\bar{x}$) & 15.2 & 14.6 \\
+Desviación estándar ($s$) & 1.8 & 2.1 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Realice una prueba de hipótesis al nivel $\alpha = 0.05$ para determinar si existe diferencia significativa entre los promedios ponderados de ambas universidades, considerando varianzas poblacionales desconocidas pero iguales.
+
+\subsubsection*{Solución}
+
+\subsubsection*{Planteamiento de hipótesis}
+\begin{itemize}
+\item $H_0: \mu_A = \mu_B$ (No hay diferencia entre los promedios)
+\item $H_1: \mu_A \neq \mu_B$ (Existe diferencia significativa)
+\end{itemize}
+
+\subsubsection*{Cálculo del estadístico}
+1. Varianza ponderada:
+\[
+s_p^2 = \frac{(n_A-1)s_A^2 + (n_B-1)s_B^2}{n_A+n_B-2} = \frac{44(1.8)^2 + 49(2.1)^2}{93} \approx 3.87
+\]
+
+2. Error estándar:
+\[
+SE = s_p\sqrt{\frac{1}{n_A} + \frac{1}{n_B}} = \sqrt{3.87}\sqrt{\frac{1}{45} + \frac{1}{50}} \approx 0.41
+\]
+
+3. Estadístico t:
+\[
+t = \frac{\bar{x}_A - \bar{x}_B}{SE} = \frac{15.2 - 14.6}{0.41} \approx 1.46
+\]
+
+\subsubsection*{Región crítica}
+Grados de libertad: $df = n_A + n_B - 2 = 93$\\
+Valor crítico bilateral: $t_{0.025,93} \approx \pm 1.986$
+
+\subsubsection*{Decisión}
+Como $|1.46| < 1.986$, no se rechaza $H_0$
+
+\subsubsection*{Conclusión}
+\begin{itemize}
+\item No existe evidencia estadística suficiente ($p > 0.05$) para afirmar que hay diferencia significativa entre los promedios ponderados
+\item El intervalo de confianza del 95\% para la diferencia sería:
+\[
+(15.2-14.6) \pm 1.986(0.41) = (-0.21, 1.41)
+\]
+\item Como el intervalo incluye el cero, confirma que la diferencia no es estadísticamente significativa
+\end{itemize}
+
+\subsubsection*{Interpretación educativa}
+Los resultados sugieren que:
+\begin{itemize}
+\item El rendimiento académico medido por PW es similar en ambas instituciones
+\item Cualquier diferencia observada (0.6 puntos) puede deberse a variabilidad muestral
+\item Se recomendaría ampliar el estudio con más variables (métodos de enseñanza, recursos, etc.)
+\end{itemize}
+
+\newpage
+\subsection{Prueba de hipótesis para diferencia de proporciones.}
+
+\subsubsection*{Problema}
+Una empresa de desarrollo de software quiere comparar la preferencia por Python vs JavaScript entre dos grupos de desarrolladores: los que tienen menos de 5 años de experiencia (Junior) y los con más de 5 años (Senior). Los datos muestrales son:
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+& Desarrolladores Junior & Desarrolladores Senior \\
+\midrule
+Tamaño muestral (n) & 150 & 120 \\
+Prefieren Python (x) & 92 & 60 \\
+Proporción ($\hat{p}$) & 0.613 & 0.500 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+¿Existe evidencia significativa ($\alpha = 0.05$) de que la preferencia por Python difiere entre ambos grupos?
+
+\subsubsection*{Solución}
+
+\subsubsection*{Planteamiento de hipótesis}
+\begin{itemize}
+\item $H_0: p_J = p_S$ (No hay diferencia en preferencias)
+\item $H_1: p_J \neq p_S$ (Existe diferencia significativa)
+\end{itemize}
+
+\subsubsection*{Cálculo del estadístico}
+1. Proporción combinada:
+\[
+\hat{p} = \frac{x_J + x_S}{n_J + n_S} = \frac{92 + 60}{150 + 120} = \frac{152}{270} \approx 0.563
+\]
+
+2. Error estándar:
+\[
+SE = \sqrt{\hat{p}(1-\hat{p})\left(\frac{1}{n_J} + \frac{1}{n_S}\right)} = \sqrt{0.563 \times 0.437 \left(\frac{1}{150} + \frac{1}{120}\right)} \approx 0.061
+\]
+
+3. Estadístico Z:
+\[
+Z = \frac{\hat{p}_J - \hat{p}_S}{SE} = \frac{0.613 - 0.500}{0.061} \approx 1.852
+\]
+
+\subsubsection*{Región crítica}
+Valor crítico bilateral: $Z_{0.025} = \pm 1.96$
+
+\subsubsection*{Decisión}
+Como $|1.852| < 1.96$, no se rechaza $H_0$ ($p = 0.064$)
+
+\subsubsection*{Intervalo de confianza del 95\%}
+\[
+(0.613 - 0.500) \pm 1.96 \times 0.061 = (-0.006, 0.232)
+\]
+
+\subsubsection*{Conclusión}
+\begin{itemize}
+\item No hay evidencia suficiente ($p > 0.05$) para afirmar diferencia significativa
+\item El intervalo de confianza incluye el cero (11.3\% $\pm$ 11.9\%)
+\item La diferencia observada (11.3\%) puede deberse a variabilidad muestral
+\end{itemize}
+
+\subsubsection*{Implicaciones técnicas}
+\begin{itemize}
+\item No se justifica crear materiales de aprendizaje diferenciados por experiencia
+\item La preferencia por Python parece ligeramente mayor en juniors (61.3\% vs 50\%) pero no estadísticamente significativa
+\item Recomendaciones:
+\begin{itemize}
+\item Ampliar tamaño muestral para mayor potencia estadística
+\item Investigar otros factores como dominio específico o tipo de proyectos
+\item Realizar estudio cualitativo complementario sobre motivos de preferencia
+\end{itemize}
+\end{itemize}
+
+\newpage
+
+\subsection{Prueba de hipótesis para varianzas.}
+
+\subsubsection*{Problema}
+Un equipo de DevOps compara la consistencia en tiempos de carga (en segundos) entre dos versiones de una página web. Se midieron:
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+& Versión A & Versión B \\
+\midrule
+Tamaño muestral (n) & 25 & 30 \\
+Varianza muestral ($s^2$) & 1.44 & 0.81 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Realice las siguientes pruebas con $\alpha = 0.05$:
+\begin{enumerate}
+\item Pruebe si la Versión A tiene varianza significativamente mayor que 1.0
+\item Compare las varianzas entre ambas versiones usando prueba F
+\end{enumerate}
+
+\subsubsection*{Solución Parte 1: Prueba para una varianza}
+
+\subsubsection*{Hipótesis}
+\begin{itemize}
+\item $H_0: \sigma^2_A = 1.0$
+\item $H_1: \sigma^2_A > 1.0$
+\end{itemize}
+
+\subsubsection*{Cálculo del estadístico}
+\[
+\chi^2 = \frac{(n-1)s^2}{\sigma_0^2} = \frac{24 \times 1.44}{1.0} = 34.56
+\]
+
+\subsubsection*{Valor crítico}
+$\chi^2_{0.05,24} = 36.42$
+
+\subsubsection*{Decisión}
+Como $34.56 < 36.42$, no se rechaza $H_0$ ($p = 0.072$)
+
+\subsubsection*{Conclusión}
+No hay evidencia suficiente para afirmar que la varianza supera 1.0 ($p > 0.05$)
+
+\subsubsection*{Solución Parte 2: Prueba F para razón de varianzas}
+
+\subsubsection*{Hipótesis}
+\begin{itemize}
+\item $H_0: \sigma^2_A = \sigma^2_B$
+\item $H_1: \sigma^2_A \neq \sigma^2_B$
+\end{itemize}
+
+\subsubsection*{Cálculo del estadístico}
+\[
+F = \frac{s^2_A}{s^2_B} = \frac{1.44}{0.81} \approx 1.778
+\]
+
+\subsubsection*{Valores críticos}
+\begin{itemize}
+\item $F_{0.025,24,29} \approx 2.05$
+\item $F_{0.975,24,29} \approx 0.48$
+\end{itemize}
+
+\subsubsection*{Región de rechazo}
+$F < 0.48$ o $F > 2.05$
+
+\subsubsection*{Decisión}
+Como $0.48 < 1.778 < 2.05$, no se rechaza $H_0$ ($p = 0.134$)
+
+\subsubsection*{Interpretación técnica}
+\begin{itemize}
+\item Ambas pruebas sugieren que no hay diferencias significativas en variabilidad
+\item La Versión B muestra menor variabilidad (0.81 vs 1.44) pero no estadísticamente significativa
+\item Recomendaciones:
+\begin{itemize}
+\item Implementar monitoreo continuo del rendimiento
+\item Considerar tamaño muestral mayor para detectar diferencias pequeñas
+\item Optimizar ambos sistemas para reducir variabilidad
+\end{itemize}
+\end{itemize}

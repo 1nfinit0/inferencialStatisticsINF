@@ -22,9 +22,19 @@
 \contentsline {subsection}{\numberline {7.5}Resumen de hallazgos}{12}{subsection.7.5}%
 \contentsline {section}{\numberline {8}Interpretación de resultados}{13}{section.8}%
 \contentsline {subsection}{\numberline {8.1}Decisiones}{13}{subsection.8.1}%
-\contentsline {section}{\numberline {9}Anexos}{14}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Anexo 1: Tabla de frecuencias acumuladas Z}{14}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Anexo 2: Tabla de frecuencias acumuladas T}{14}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Anexo 3: Tabla de frecuencias acumuladas $\chi ^2$}{14}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Anexo 4: Tabla de frecuencias acumuladas F}{14}{subsection.9.4}%
-\contentsline {section}{Referencias}{15}{subsection.9.4}%
+\contentsline {section}{\numberline {9}Casos Particulares}{14}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Tipo de muestreo: \textit {Muestreo aleatorio simple}}{14}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Cálculo del tamaño de muestra}{15}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Distribución muestral: \textit {Varianza conocida}}{16}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Comparación de dos medias con varianzas desconocidas}{18}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Intervalo de confianza para diferencia de proporciones}{19}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}Prueba de hipótesis para la media (varianza conocida)}{21}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}Prueba de hipótesis para diferencia de medias}{22}{subsection.9.7}%
+\contentsline {subsection}{\numberline {9.8}Prueba de hipótesis para diferencia de proporciones.}{24}{subsection.9.8}%
+\contentsline {subsection}{\numberline {9.9}Prueba de hipótesis para varianzas.}{26}{subsection.9.9}%
+\contentsline {section}{\numberline {10}Anexos}{28}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Anexo 1: Tabla de frecuencias acumuladas Z}{28}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Anexo 2: Tabla de frecuencias acumuladas T}{28}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Anexo 3: Tabla de frecuencias acumuladas $\chi ^2$}{28}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Anexo 4: Tabla de frecuencias acumuladas F}{28}{subsection.10.4}%
+\contentsline {section}{Referencias}{29}{subsection.10.4}%
